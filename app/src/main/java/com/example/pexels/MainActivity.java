@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
         });
         fetchImage();
     }
-
     public void fetchImage() {
         StringRequest request = new StringRequest(Request.Method.GET, "https://api.pexels.com/v1/curated/?page=" + pageNumber + "&per_page=80",
                 new Response.Listener<String>() {
